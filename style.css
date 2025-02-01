@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    margin-left: 2em;
+}
+
+.navbar-nav {
+    margin-right: 2em;
+}
+
+.nav-link {
+    float: right;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: white !important;
+}
+
+.container-fluid {
+    position: relative; /* Add this in case the parent element needs it */
+}
+
+.navbar-nav li {
+    padding: 0 1em;
+    font-size: 1.2rem;
+}
+
+.navbar-nav li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(180, 197, 217);
+    text-underline-offset: 6px;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 0;
+}
+
+.left-side-home {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side-home {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+    max-width: 45em;
+}
+
+.developer {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5em;
+    padding-left: 1em;
+}
+
+.home-header {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home-title {
+    color: rgb(180, 197, 217);
+}
+
+.home-button {
+    background-color: rgb(180, 197, 217);
+    color: white;
+    border: none;
+    padding: 0.5em 1.5em;
+    font-weight: bold;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    box-shadow: 1px 1px 2px 3px lightgray;
+}
+
+.home-button:active {
+    box-shadow: none;
+}
+
+.home-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    font-size: 1.5rem;
+}
+
+#about {
+    background-color: rgb(180, 197, 217);
+    padding: 2em 0;
+}
+
+.row {
+    column-gap: 1em;
+    display: flex;
+}
+
+.col {
+    height: 15em;
+    max-height: 10em;
+    background: linear-gradient(to right, rgb(95, 164, 243), rgb(0, 119, 255));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.col:hover {
+    box-shadow: 1px 2px 1px 2px lightblue;
+}
+
+.col:active {
+    box-shadow: none;
+}
+
+.skill {
+    font-weight: bold;
+    padding-top: 0.3em;
+}
+
+.fa-brands {
+    font-size: 2rem;
+}
+
+.about-header {
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+#skills {
+    padding: 2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    height: auto;
+    gap: 1em;
+}
+
+.grid-box {
+    margin: auto;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 15em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    background-color: rgb(95, 164, 243);
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+.card-title, .app-name {
+    color: white;
+}
+
+.card-title {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#contact {
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.left-side-contact {
+    flex-basis: 50%;
+}
+
+.right-side-contact {
+    flex-basis: 50%;
+}
+
+.programmer {
+    max-width: 100%;
+    height: auto;
+}
+
+.submit-button {
+    max-width: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+}
+
+.submit {
+    background-color: dodgerblue;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgba(30, 143, 255, 0.9);
+}
+
+.submit:active {
+    background-color: rgba(30, 143, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+    .developer {
+        max-width: 20em;
+        border-radius: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-header {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .developer {
+        max-width: 15em;
+        border-radius: 2em;
+    }
+}
+
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column;
+        justify-content: space-around; 
+        width: 80%;
+        margin: auto;
+        gap: 1em;
+    }
+
+    .col {
+        flex: 1; /* Ensures equal width for each item */
+        margin: 0 1em; /* Optional: spacing between items */
+    }
+}
+
+@media (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
